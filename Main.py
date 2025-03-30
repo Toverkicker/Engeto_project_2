@@ -81,6 +81,7 @@ def check_end (gameboardvalue_lst: list,) -> bool:
         ) and gameboardvalue_lst[checked_list[0] - 1] != " ": 
             print(f"Congratulations, the player {gameboardvalue_lst[checked_list[0] - 1]} WON!")
             print(f"Winning combination were positions: {checked_list}.")
+            print(separator)
             return True
 
     if (" " not in gameboardvalue_lst):     # check if game ends because of no empty playing fields 
