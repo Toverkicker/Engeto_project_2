@@ -85,7 +85,8 @@ def check_end (gameboardvalue_lst: list,) -> bool:
             return True
 
     if (" " not in gameboardvalue_lst):     # check if game ends because of no empty playing fields 
-        print("Game ended in draw, no empty playing fields remain.")
+        print("Game ended in a draw, no empty playing fields remain.")
+        print(separator)
         return True
 
     return False
